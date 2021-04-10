@@ -13,6 +13,7 @@ class baseDatos{
     {
         try{
             $infoBD="mysql:host=localhost;dbname=actualizadorinventario";
+
             $conexionBD = new PDO ($infoBD,$this->usuarioBD,$this->passwordBD);
             return($conexionBD);
         }
