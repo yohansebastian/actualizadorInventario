@@ -19,20 +19,18 @@ $(document).ready(function(){
         url: "consultaCodigobarras.php?barcode="+barcode,
         datatype: "json",
         success: function(resultado){
-          console.log('El vector es este '+resultado);
-         // $('#nombre').val(resultado);
-        $('#codigo').val(resultado);
-        }
-      });
-      $.ajax({
-        method: "POST",
-        url: "consultaCodigobarras1.php?barcode="+barcode,
-        datatype: "json",
-        success: function(resultado){
-          console.log('El vector es este '+resultado);
-         // $('#nombre').val(resultado);
-        $('#nombre').val(resultado);
-        }
+          var datos = JSON.parse(resultado);
+          console.log(datos.p_nombre);
+            $('#nombre').val(datos.p_nombre);
+            $('#codigo').val(datos.p_codigo);
+            $('#categoria').val(datos.p_departamento);
+            $('#precioAnt').val(datos.p_precioAnt);
+            $('#precioAct').val(datos.p_precioAct);
+            $('#activo').val(datos.p_activo);
+            $('#registradoen').val(datos.p_regitradoEn);
+            $('#modificadoen').val(datos.p_modificadoEn);
+          }
+          
       });
   }); 
 

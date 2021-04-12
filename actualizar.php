@@ -5,7 +5,7 @@ include("baseDatos.php");
 if(isset($_POST["enviar"])){
     $codigo=$_POST["codigo"];
     $nombre=$_POST["nombre"];
-    $departamento=$_POST["departamento"];
+    $departamento=$_POST["categoria"];
     $precioAnt=$_POST["precioAnt"];
     $precioAct=$_POST["precioAct"];
     $activo=$_POST["activo"];
@@ -19,8 +19,8 @@ if(isset($_POST["enviar"])){
         $productos=$transaccion-> buscarDatos($consultaSQL);
         $resultado=$productos[0]['p_codigo'];
         $resultado2=$productos[0]['p_codigoBarras'];
-        echo var_dump($resultado2);
-        die();
+        //echo var_dump($resultado2);
+        //die();
         if ($resultado==$codigo){
                 $consultaSQL= "UPDATE productos SET p_nombre='$nombre',p_departamento='$departamento',p_precioAnt='$precioAnt',p_precioAct='$precioAct',p_activo=$activo,p_codigoBarras='$codigobarras',p_regitradoEn='$registradoen',p_modificadoEn='$modificadoen' WHERE p_codigo='$codigo'";
                 echo "<br>";
@@ -38,7 +38,7 @@ if(isset($_POST["enviar"])){
             }
             else
                 $consultaSQL= "INSERT INTO productos (p_id,p_codigo,p_nombre,p_departamento,p_precioAnt,p_precioAct,p_activo,p_codigoBarras,p_regitradoEn,p_modificadoEn)
-                VALUES ('','$codigo','$nombre','$departamento','$precioAnt','$precioAct',$activo,'$codigobarras','$fecha','$estado')";
+                VALUES ('','$codigo','$nombre','$departamento','$precioAnt','$precioAct',$activo,'$codigobarras','$registradoen','$modificadoen')";
                   echo "<br>";
                   echo "<br>";
                   echo $consultaSQL;
