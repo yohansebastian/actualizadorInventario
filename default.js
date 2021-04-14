@@ -16,8 +16,19 @@ function autocompletar(){
         // conexion a base de datos de
 
         httpRequest('controller.php?nombre='+ nombre,function(){
-            //console.log(this.responseText);
+           // console.log(this.responseText);
            const arreglo = JSON.parse(this.responseText);
+           const valor = JSON.parse(this.responseText);
+          // console.log(valor[1]);
+          // Asignacion de valor a cada input haciendo busqueda por nombre de producto
+           $('#codigo').val(valor[1]);
+           $('#categoria').val(valor[2]);
+           $('#precioAnt').val(valor[3]);
+            $('#precioAct').val(valor[4]);
+            $('#activo').val(valor[5]);
+            $('#codigobarra').val(valor[6]);
+            $('#registradoen').val(valor[7]);
+            $('#modificadoen').val(valor[8]);
             //console.log(arreglo);
             // Validar el arreglo vs el input
             if(arreglo.length == 0 ) return false;
@@ -27,12 +38,13 @@ function autocompletar(){
                 elementoLista.innerHTML = `<strong>${item.substr(0,nombre.length)}</strong>${item.substr(nombre.length)}`;
                 elementoLista.addEventListener('click',function(){
                     inputnombre.value = this.innerText;
-                        cerrarLista();
+                        cerrarLista()
                     return false;
                 })
                 divList.appendChild(elementoLista);
                 }
             });
+            
         });
 
  
@@ -73,8 +85,8 @@ function autocompletar(){
 
 function seleccionar(items, indexFocus){
     if(!items || indexFocus == -1) return false;
-    items.forEach(x =>{x.classList.remove('autocompletarActivo')});
-    items[indexFocus].classList.add("autocompletarActivo");
+    items.forEach(x =>{x.classList.remove('nombreProducto')});
+    items[indexFocus].classList.add("nombreProducto");
 }
 
 function cerrarLista(){

@@ -46,5 +46,5 @@ if(isset($_POST["enviar"])){
                   $transaccion ->insertarDatos($consultaSQL); 
 }
 // Se verifica que si se lea correctamente los datos que entran del formulario
-//header("location:index.html");
+header("location:index.html");
 ?>

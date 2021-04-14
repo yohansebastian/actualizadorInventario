@@ -6,7 +6,7 @@ $modelo = new autocompletar();
 
 $texto = $_GET['nombre'];
 
-$res=$modelo->buscar($texto);
+$res=$modelo->buscar(strtoupper($texto));
 
 echo json_encode($res);
 

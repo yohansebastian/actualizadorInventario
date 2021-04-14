@@ -14,33 +14,34 @@ strong{
     outline: none;
     width: 500px;
 }
-.listaAutocompletarNombres{
+/*.listaAutocompletarNombres{
     color: #ccc;
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
     z-index: 99;
 
-    top: 100%;
-    left: 20px;
-    right: 0;
-    width: 93%;
-}
+ 
+}*/
+/*
 .listaAutocompletarNombres div{
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
     border-bottom: 1px solid #d4d4d4;
 
-}
+}*/
+/*
 .listaAutocompletarNombres div:hover{
     background-color: dodgerblue;
 
-}
+}*/
+/*
 .autocompletarActivo{
     background-color: dodgerblue !important;
     color: #a1caff;
-}
+}*/
+/*
 .autocompletarActivo strong{
     color: #fff;
-}
+}*/
