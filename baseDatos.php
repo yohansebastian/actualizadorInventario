@@ -12,7 +12,7 @@ class baseDatos{
     public function conectarBD ()
     {
         try{
-            $infoBD="mysql:host=localhost;dbname=actualizadorinventario";
+            $infoBD="mysql:host=localhost;dbname=actualizadorinventario;charset=utf8";
 
             $conexionBD = new PDO ($infoBD,$this->usuarioBD,$this->passwordBD);
             return($conexionBD);

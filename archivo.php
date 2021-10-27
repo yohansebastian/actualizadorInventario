@@ -27,13 +27,9 @@ if (isset($_POST['archivo']))
             $transaccion = new baseDatos();
             $transaccion ->insertarDatos($consultaSQL);
         }else{
-            $consultaSQL= "INSERT INTO categoria (c_id,c_nombre)
-            VALUES ('$c_id','$c_nombre')";
-              echo "<br>";
-              echo "<br>";
-              //echo $consultaSQL;
-              $transaccion = new baseDatos();
-              $transaccion ->insertarDatos($consultaSQL); 
+            $consultaSQL= "INSERT INTO categoria (c_id,c_nombre) VALUES ('$c_id','$c_nombre')";
+            $transaccion = new baseDatos();
+            $transaccion ->insertarDatos($consultaSQL); 
         }
     }
 

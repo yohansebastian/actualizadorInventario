@@ -3,13 +3,17 @@
 $contenedorjson=file_get_contents('./data.json');
 $cont = json_decode($contenedorjson,true);
 
-$convertArrayToString = implode("-",$cont);
+print_r($cont['Departamento']);
+
+$real = $cont['Departamento'];
+
+$convertArrayToString = implode(" ",$real);
 
 print_r ($convertArrayToString);
 
 //print_r(array_chunk($cont,45));
 // Encriptar JSON
-$encriptar = base64_encode($plode);
+$encriptar = base64_encode($convertArrayToString);
 //echo ( $encriptar);
 //echo ("<pre>");
 //Desencriptar JSON

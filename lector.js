@@ -33,30 +33,6 @@ $(document).ready(function(){
           
       });
   }); 
-
-  
-
-
-
-// USAR AJAX PARA CARGAR LOS SELECT
-//   $.ajax({
-//     url : './consultaCategorias.php',
-//  
-//   });
-/**
- * 
- * hide
- * show
- * attr
- * html
- * val
- * on
- * change
- * blur
- * 
- * 
- * 
- */
 });
 
 

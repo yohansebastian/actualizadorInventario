@@ -10,5 +10,4 @@ $res=$modelo->buscar(strtoupper($texto));
 
 echo json_encode($res);
 
-
 ?>

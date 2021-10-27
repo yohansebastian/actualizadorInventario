@@ -1,0 +1,316 @@
+{
+   "Categoria":[
+      {
+         "c_nombre":"ACEITES"
+      },
+      {
+         "c_nombre":"ATUNES"
+      },
+      {
+         "c_nombre":"AZUCAR"
+      },
+      {
+         "c_nombre":"ARROZ          N"
+      },
+      {
+         "c_nombre":"CONFITERIA"
+      },
+      {
+         "c_nombre":"CONDIMENTOS"
+      },
+      {
+         "c_nombre":"CREMAS DENTALES"
+      },
+      {
+         "c_nombre":"HARINAS"
+      },
+      {
+         "c_nombre":"CIGARRILLOS"
+      },
+      {
+         "c_nombre":"PANELA Y MAIZ"
+      },
+      {
+         "c_nombre":"CHOCOLATES"
+      },
+      {
+         "c_nombre":"CAFES          N"
+      },
+      {
+         "c_nombre":"DETERGENTES"
+      },
+      {
+         "c_nombre":"DESODORANTES"
+      },
+      {
+         "c_nombre":"ENLATADOS"
+      },
+      {
+         "c_nombre":"GALLETAS"
+      },
+      {
+         "c_nombre":"EMPAQUETADOS"
+      },
+      {
+         "c_nombre":"JABON DE LAVAR"
+      },
+      {
+         "c_nombre":"JABONES DE BA�O"
+      },
+      {
+         "c_nombre":"LECHES"
+      },
+      {
+         "c_nombre":"BLANQUEADORES"
+      },
+      {
+         "c_nombre":"LAVAPLATOS"
+      },
+      {
+         "c_nombre":"MANTEQUILLAS"
+      },
+      {
+         "c_nombre":"PASTILLERIA Y MU"
+      },
+      {
+         "c_nombre":"PAPELES HIGIENIC"
+      },
+      {
+         "c_nombre":"PA�ALES"
+      },
+      {
+         "c_nombre":"REFRESCOS"
+      },
+      {
+         "c_nombre":"SALSAS Y MAYONES"
+      },
+      {
+         "c_nombre":"SHAMPOO Y ACONDI"
+      },
+      {
+         "c_nombre":"BETUNES Y PILAS"
+      },
+      {
+         "c_nombre":"LICORES"
+      },
+      {
+         "c_nombre":"ASEO PERSONAL"
+      },
+      {
+         "c_nombre":"VARIOS"
+      },
+      {
+         "c_nombre":"CARNES FRIAS"
+      },
+      {
+         "c_nombre":"CUIDOS"
+      },
+      {
+         "c_nombre":"USOS VARIOS"
+      },
+      {
+         "c_nombre":"LACTEOS"
+      },
+      {
+         "c_nombre":"caacharro"
+      },
+      {
+         "c_nombre":"CEREALES"
+      },
+      {
+         "c_nombre":"pollo          N"
+      },
+      {
+         "c_nombre":"parva          N"
+      },
+      {
+         "c_nombre":"sopas y cremas"
+      },
+      {
+         "c_nombre":"EMPAQUETADOS EL"
+      },
+      {
+         "c_nombre":"BOCADILLOS Y MER"
+      },
+      {
+         "c_nombre":"MEKATOS"
+      }
+   ],
+   "Producto":[
+      {
+         "p_codigoBase":"01000",
+         "p_nombre":"OLEOLLANO X 450",
+         "p_categoria":1,
+         "p_precio":2291,
+         "p_codigoBarras":"770177777777747"
+      },
+      {
+         "p_codigoBase":"01001",
+         "p_nombre":"FINO SOYA X 1800",
+         "p_categoria":1,
+         "p_precio":13663,
+         "p_codigoBarras":"01001"
+      },
+      {
+         "p_codigoBase":"01002",
+         "p_nombre":"ACEITE EL 13 X 1000",
+         "p_categoria":1,
+         "p_precio":5083,
+         "p_codigoBarras":"01002"
+      },
+      {
+         "p_codigoBase":"01003",
+         "p_nombre":"OLEOLLANO ROJO X 900",
+         "p_categoria":1,
+         "p_precio":4417,
+         "p_codigoBarras":"123456789"
+      },
+      {
+         "p_codigoBase":"01004",
+         "p_nombre":"ACEITE SURTIMAX 900",
+         "p_categoria":1,
+         "p_precio":4000,
+         "p_codigoBarras":"01004"
+      },
+      {
+         "p_codigoBase":"01005",
+         "p_nombre":"OLEOLLANO X 500",
+         "p_categoria":1,
+         "p_precio":2625,
+         "p_codigoBarras":"01005"
+      },
+      {
+         "p_codigoBase":"01006",
+         "p_nombre":"OLEOLLANO X 1000",
+         "p_categoria":1,
+         "p_precio":5000,
+         "p_codigoBarras":"01006"
+      },
+      {
+         "p_codigoBase":"01007",
+         "p_nombre":"OLEOLLANO X 3000",
+         "p_categoria":1,
+         "p_precio":14000,
+         "p_codigoBarras":"01007"
+      },
+      {
+         "p_codigoBase":"01008",
+         "p_nombre":"VIVI X 250",
+         "p_categoria":1,
+         "p_precio":1534,
+         "p_codigoBarras":"01008"
+      },
+      {
+         "p_codigoBase":"01009",
+         "p_nombre":"VIVI X 500",
+         "p_categoria":1,
+         "p_precio":2579,
+         "p_codigoBarras":"01009"
+      },
+      {
+         "p_codigoBase":"01010",
+         "p_nombre":"VIVI X 1000",
+         "p_categoria":1,
+         "p_precio":4900,
+         "p_codigoBarras":"01010"
+      },
+      {
+         "p_codigoBase":"01011",
+         "p_nombre":"VIVI X 2000",
+         "p_categoria":1,
+         "p_precio":9500,
+         "p_codigoBarras":"01011"
+      },
+      {
+         "p_codigoBase":"01012",
+         "p_nombre":"VIVI X 3000",
+         "p_categoria":1,
+         "p_precio":14029,
+         "p_codigoBarras":"01012"
+      },
+      {
+         "p_codigoBase":"01013",
+         "p_nombre":"SOY SABOR X 500",
+         "p_categoria":1,
+         "p_precio":2875,
+         "p_codigoBarras":"01013"
+      },
+      {
+         "p_codigoBase":"01014",
+         "p_nombre":"SOY SABOR X 1000",
+         "p_categoria":1,
+         "p_precio":5879,
+         "p_codigoBarras":"01014"
+      },
+      {
+         "p_codigoBase":"01015",
+         "p_nombre":"SOY SABOR X 3000",
+         "p_categoria":1,
+         "p_precio":17233,
+         "p_codigoBarras":"01015"
+      },
+      {
+         "p_codigoBase":"01016",
+         "p_nombre":"OLEOCALI X 250",
+         "p_categoria":1,
+         "p_precio":1490,
+         "p_codigoBarras":"01016"
+      },
+      {
+         "p_codigoBase":"01017",
+         "p_nombre":"OLEOCALI X 500",
+         "p_categoria":1,
+         "p_precio":3239,  
+         "p_codigoBarras":"01017"
+      },
+      {
+         "p_codigoBase":"01018",
+         "p_nombre":"OLEOCALI X 1000",
+         "p_categoria":1,
+         "p_precio":5259,
+         "p_codigoBarras":"01018"
+      },
+      {
+         "p_codigoBase":"01019",
+         "p_nombre":"OLEOCALI X 3000",
+         "p_categoria":1,
+         "p_precio":17884,      
+         "p_codigoBarras":"01019"
+      },
+      {
+         "p_codigoBase":"01020",
+         "p_nombre":"SEVILLANA X 3000",
+         "p_categoria":1,
+         "p_precio":15800,
+         "p_codigoBarras":"01020"
+      },
+      {
+         "p_codigoBase":"01021",
+         "p_nombre":"RICA PALMA X 1000",
+         "p_categoria":1,
+         "p_precio":5147,
+         "p_codigoBarras":"01021"
+      },
+      {
+         "p_codigoBase":"01022",
+         "p_nombre":"RICA PALMA X 500",
+         "p_categoria":1,
+         "p_precio":2753,
+         "p_codigoBarras":"01022"
+      },
+      {
+         "p_codigoBase":"01023",
+         "p_nombre":"RICA PALMA X 250",
+         "p_categoria":1,
+         "p_precio":1454,
+         "p_codigoBarras":"01023"
+      },
+      {
+         "p_codigoBase":"01024",
+         "p_nombre":"GURME FAMILIA X 2000",
+         "p_categoria":1,
+         "p_precio":14950,
+         "p_codigoBarras":"01024"
+      }
+   ]
+}

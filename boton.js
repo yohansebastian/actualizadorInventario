@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     if (window.innerWidth < 768){
-        $('.btn').addClass('btn-sm btn-block');
+        $('.btn').addClass('btn-sm ');
     }
     else if (window.innerWidth<900){
         $('.btn').removeClass('btn-sm');

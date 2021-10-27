@@ -14,7 +14,7 @@ strong{
     outline: none;
     width: 500px;
 }
-/*.listaAutocompletarNombres{
+.listaAutocompletarNombres{
     color: #ccc;
     position: absolute;
     border: 1px solid #d4d4d4;
@@ -22,26 +22,26 @@ strong{
     z-index: 99;
 
  
-}*/
-/*
+}
+
 .listaAutocompletarNombres div{
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
     border-bottom: 1px solid #d4d4d4;
 
-}*/
-/*
+}
+
 .listaAutocompletarNombres div:hover{
     background-color: dodgerblue;
 
-}*/
-/*
+}
+
 .autocompletarActivo{
     background-color: dodgerblue !important;
     color: #a1caff;
-}*/
-/*
+}
+
 .autocompletarActivo strong{
     color: #fff;
-}*/
+}

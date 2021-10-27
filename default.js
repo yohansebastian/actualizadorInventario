@@ -12,42 +12,38 @@ function autocompletar(){
         divList.setAttribute('id',this.id + '-lista-autocompletar');
         divList.setAttribute('class','listaAutocompletarNombres');
         this.parentNode.appendChild(divList);
-
         // conexion a base de datos de
-
         httpRequest('controller.php?nombre='+ nombre,function(){
            // console.log(this.responseText);
            const arreglo = JSON.parse(this.responseText);
            const valor = JSON.parse(this.responseText);
-          // console.log(valor[1]);
-          // Asignacion de valor a cada input haciendo busqueda por nombre de producto
-           $('#codigo').val(valor[1]);
-           $('#categoria').val(valor[2]);
-           $('#precioAnt').val(valor[3]);
-            $('#precioAct').val(valor[4]);
-            $('#activo').val(valor[5]);
-            $('#codigobarra').val(valor[6]);
-            $('#registradoen').val(valor[7]);
-            $('#modificadoen').val(valor[8]);
-            //console.log(arreglo);
+
+            console.log(valor);
+            // console.log(arreglo); 
             // Validar el arreglo vs el input
             if(arreglo.length == 0 ) return false;
             arreglo.forEach(item => {
-                if(item.substr(0,nombre.length)==nombre){
-                const elementoLista = document.createElement('div');
-                elementoLista.innerHTML = `<strong>${item.substr(0,nombre.length)}</strong>${item.substr(nombre.length)}`;
-                elementoLista.addEventListener('click',function(){
-                    inputnombre.value = this.innerText;
+                if(item.substr(0,nombre.length).toLowerCase() ==nombre.toLowerCase() ){
+                    const elementoLista = document.createElement('div');
+                    elementoLista.innerHTML = `<strong>${item.substr(0,nombre.length)}</strong>${item.substr(nombre.length)}`;
+                    divList.appendChild(elementoLista);                   
+                    elementoLista.addEventListener('click',function(){
+                        inputnombre.value = this.innerText;
+                        // Asignacion de valor a cada input haciendo busqueda por nombre de producto
+                        $('#codigo').val(valor[1]);
+                        $('#categoria').val(valor[2]);
+                        $('#precioAnt').val(valor[3]);
+                        $('#precioAct').val(valor[4]);
+                        $('#activo').val(valor[5]);
+                        $('#codigobarra').val(valor[6]);
+                        $('#registradoen').val(valor[7]);
+                        $('#modificadoen').val(valor[8]);
                         cerrarLista()
-                    return false;
-                })
-                divList.appendChild(elementoLista);
+                        return false;
+                    })
                 }
             });
-            
         });
-
- 
     });
     inputnombre.addEventListener('keydown', function(e){
         const divList = document.querySelector('#' + this.id + '-lista-autocompletar');
@@ -85,8 +81,8 @@ function autocompletar(){
 
 function seleccionar(items, indexFocus){
     if(!items || indexFocus == -1) return false;
-    items.forEach(x =>{x.classList.remove('nombreProducto')});
-    items[indexFocus].classList.add("nombreProducto");
+    items.forEach(x =>{x.classList.remove('autocompletarActivo')});
+    items[indexFocus].classList.add("autocompletarActivo");
 }
 
 function cerrarLista(){
@@ -108,5 +104,7 @@ function httpRequest(url,callback){
         }
     }
 }
+
+
 
 autocompletar();    
